@@ -1,0 +1,8 @@
+.env
+venv/
+fluxaki_session.session
+analise_grupos.json
+produtos_raw.json
+produtos_filtrados.json
+__pycache__/
+*.pyc
