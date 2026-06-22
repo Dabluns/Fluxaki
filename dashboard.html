@@ -1682,10 +1682,6 @@ function buildCard(p){
   html+='<div class="pcard-name">'+p.name+'</div>';
   html+='<div class="pcard-desc">'+p.desc+'</div>';
   html+='<div class="pcard-footer">';
-  html+='<div class="pcard-meta">';
-  html+='<div class="pcard-dl">'+dlCountIcon+p.downloads+'</div>';
-  html+='<div class="stars">'+stars+'</div>';
-  html+='</div>';
   html+=btn;
   html+='</div>';
   html+='</div></div>';
@@ -1880,7 +1876,6 @@ function renderOvTop(){
     html+='<div class="tprod-name">'+p.name+'</div>';
     html+='<div class="tprod-desc">'+p.desc+'</div>';
     html+='<div class="tprod-footer">';
-    html+='<span class="tprod-dl">'+dlIcon+p.downloads+'</span>';
     html+='<button class="tprod-btn'+(p.tier==='pro'?' pro-lock':'')+'" onclick="event.stopPropagation();dlProduct('+p.id+',this)">';
     html+=(p.tier==='free'?'Baixar':'Ver Pro');
     html+='</button></div></div>';
